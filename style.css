@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+.main-header{
+    background: linear-gradient(135deg, #003366, #006699);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    animation: fadeDown 1s ease;
+}
+
+.logo{
+    width: 110px;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+
+.logo:hover{
+    transform: scale(1.08);
+}
+
+.main-header h1{
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.main-header p{
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+/* HERO */
+
+.hero{
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 20px;
+    text-align: center;
+    animation: fadeUp 1s ease;
+}
+
+.hero h2{
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.subtitle{
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.info-card{
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.info-card:hover{
+    transform: translateY(-5px);
+}
+
+.info-card p{
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+/* NAVIGATION */
+
+.menu{
+    max-width: 1000px;
+    margin: 20px auto 40px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.menu a{
+    background: white;
+    color: #003366;
+    text-decoration: none;
+    padding: 18px;
+    border-radius: 14px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    background: #003366;
+    color: white;
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* PAGE */
+
+.page{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* CARDS */
+
+.section-card{
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    animation: fadeUp 0.8s ease;
+    transition: 0.3s;
+}
+
+.section-card:hover{
+    transform: translateY(-4px);
+}
+
+.section-card h3{
+    color: #003366;
+    margin-bottom: 18px;
+    font-size: 24px;
+}
+
+/* UPLOAD BOX */
+
+.upload-box{
+    border: 2px dashed #aaa;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 12px 0;
+    background: #fafafa;
+    transition: 0.3s;
+}
+
+.upload-box:hover{
+    border-color: #006699;
+    background: #f1f8fc;
+}
+
+.upload-box a{
+    color: #006699;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.upload-box a:hover{
+    text-decoration: underline;
+}
+
+/* IMAGES */
+
+.work-img{
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: 0.4s;
+}
+
+.work-img:hover{
+    transform: scale(1.02);
+}
+
+/* EMPTY TEXT */
+
+.empty-text{
+    color: #777;
+    font-style: italic;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    padding: 22px;
+    background: #003366;
+    color: white;
+    margin-top: 40px;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown{
+    from{
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 768px){
+
+    .main-header h1{
+        font-size: 28px;
+    }
+
+    .hero h2{
+        font-size: 28px;
+    }
+
+    .subtitle{
+        font-size: 16px;
+    }
+
+    .info-card{
+        padding: 20px;
+    }
+
+    .info-card p{
+        font-size: 15px;
+    }
+
+    .menu{
+        grid-template-columns: 1fr;
+    }
+
+    .menu a{
+        padding: 16px;
+        font-size: 15px;
+    }
+
+    .section-card{
+        padding: 18px;
+    }
+
+    .section-card h3{
+        font-size: 20px;
+    }
+
+    .upload-box{
+        padding: 16px;
+    }
+
+    .logo{
+        width: 85px;
+    }
+}
